@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:infinity/ui/views/splashscreen/splash_screen_view.dart';
+import 'package:infinity/ui/views/test/test_view.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 import 'app/locator.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SplashScreenView(),
+      home: TestView(),
       onGenerateRoute: Router().onGenerateRoute,
       navigatorKey: locator<NavigationService>().navigatorKey,
     );
