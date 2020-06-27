@@ -37,6 +37,8 @@ dependencies:
   observable_ish: ^2.1.4
   flutter_webview_plugin: ^0.3.11
   shared_preferences: ^0.5.7+3
+  firebase_auth: ^0.16.1
+
 
 
   # The following adds the Cupertino Icons font to your application.
