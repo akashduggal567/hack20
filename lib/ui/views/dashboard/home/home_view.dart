@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:infinity/ui/views/dashboard/home/home_viewModel.dart';
-import 'package:smooth_star_rating/smooth_star_rating.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends StatelessWidget {

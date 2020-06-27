@@ -1,6 +1,5 @@
 import 'package:infinity/ui/views/dashboard/dashboard_viewModel.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_star_rating/smooth_star_rating.dart';
 import 'package:stacked/stacked.dart';
 
 import 'home/home_view.dart';
@@ -30,9 +29,6 @@ class _DashboardViewState extends State<DashboardView> {
     return ViewModelBuilder<DashboardViewModel>.reactive(
         builder: (context, model, child) => Scaffold(
           appBar: AppBar(
-            leading: Container(
-              child: Icon(Icons.dashboard),
-            ),
             title: Text("Test"),
             actions: <Widget>[
               Icon(Icons.person_pin),
