@@ -20,5 +20,14 @@ class AuthenticationService {
     }
   }
 
+  Future logOut() async{
+      await _firebaseAuth.signOut();
+      _navigationService.navigateTo(Routes.testViewRoute);
+  }
+
+  Future<bool> isUserLoggedIn() async {
+    var user = await _firebaseAuth.currentUser();
+    return user != null;
+  }
 
 }

@@ -11,17 +11,20 @@ import 'package:infinity/ui/views/splashscreen/splash_screen_view.dart';
 import 'package:infinity/ui/views/dashboard/home/home_view.dart';
 import 'package:infinity/ui/views/dashboard/dashboard_view.dart';
 import 'package:infinity/models/user_model.dart';
+import 'package:infinity/ui/views/login/login_view.dart';
 import 'package:infinity/ui/views/test/test_view.dart';
 
 abstract class Routes {
   static const splashScreenViewRoute = '/';
   static const homeViewRoute = '/home-view-route';
   static const dashboardViewRoute = '/dashboard-view-route';
+  static const loginViewRoute = '/login-view-route';
   static const testViewRoute = '/test-view-route';
   static const all = {
     splashScreenViewRoute,
     homeViewRoute,
     dashboardViewRoute,
+    loginViewRoute,
     testViewRoute,
   };
 }
@@ -56,6 +59,11 @@ class Router extends RouterBase {
         return MaterialPageRoute<dynamic>(
           builder: (context) =>
               DashboardView(key: typedArgs.key, user: typedArgs.user),
+          settings: settings,
+        );
+      case Routes.loginViewRoute:
+        return MaterialPageRoute<dynamic>(
+          builder: (context) => LoginView(),
           settings: settings,
         );
       case Routes.testViewRoute:
